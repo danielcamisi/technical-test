@@ -1,0 +1,34 @@
+{
+    "News": [
+        {
+            "img": "/assets/imgs/sheets.jpg",
+            "resume": "Resumo da notícia 1",
+            "details": "Corpo da notícia 1. Aqui você pode incluir mais informações relevantes sobre o assunto."
+        },
+        {
+            "img": "/assets/imgs/sheets.jpg",
+            "resume": "Resumo da notícia 2",
+            "details": "Corpo da notícia 2. Detalhes adicionais que explicam melhor a situação."
+        },
+        {
+            "img": "/assets/imgs/sheets.jpg",
+            "resume": "Resumo da notícia 3",
+            "details": "Corpo da notícia 3. Informações sobre o que aconteceu e suas implicações."
+        },
+        {
+            "img": "/assets/imgs/sheets.jpg",
+            "resume": "Resumo da notícia 4",
+            "details": "Corpo da notícia 4. Informações importantes relacionadas a eventos recentes."
+        },
+        {
+            "img": "/assets/imgs/sheets.jpg",
+            "resume": "Resumo da notícia 5",
+            "details": "Corpo da notícia 5. Um olhar aprofundado sobre o impacto desta situação."
+        },
+        {
+            "img": "/assets/imgs/sheets.jpg",
+            "resume": "Resumo da notícia 6",
+            "details": "Corpo da notícia 6. Análise das consequências e reações da comunidade."
+        }
+    ]
+}

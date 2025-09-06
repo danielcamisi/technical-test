@@ -1,0 +1,148 @@
+
+## **📄 .gitignore**
+
+```gitignore
+# Dependências
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env*
+backend/.env*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory usado por ferramentas como istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Arquivos de cache
+.npm
+.eslintcache
+.cache/
+.parcel-cache/
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+
+# Nuxt.js
+.nuxt
+dist
+
+# Arquivos temporários
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Arquivos de upload
+backend/uploads/*
+!backend/uploads/.gitkeep
+uploads/*
+!uploads/.gitkeep
+
+# Arquivos de banco de dados local
+*.sqlite
+*.sqlite3
+*.db
+
+# Arquivos de IDE e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Arquivos do sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Arquivos de build/dist
+build/
+dist/
+out/
+
+# Arquivos de sessão
+sessions/
+
+# Certificados SSL
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+
+# Arquivos específicos do projeto
+package-lock.json  # se usar yarn
+yarn.lock         # se usar npm
+
+# Arquivos de teste
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# Storybook
+storybook-static/
+
+# Arquivos de documentação gerados
+docs/build/
+
+# Arquivos de configuração local
+.env.local
+.env.*.local
+
+# Arquivos de debug
+debug.log
+error.log
+
+# Arquivos de profiling
+*.cpuprofile
+*.heapprofile
+
+# Arquivos de monitoramento
+.pm2/
