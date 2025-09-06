@@ -90,9 +90,9 @@ MAX_FILE_SIZE=10485760
 FRONTEND_URL=http://localhost:3000
 ```
 
-#### 🛠️ Endpoints da API
+## 🛠️ Endpoints da API
 
-####👥 Usuários
+### 👥 Usuários
 
 
 - POST /users/SignIn - Cadastrar usuário
@@ -100,7 +100,7 @@ FRONTEND_URL=http://localhost:3000
 - POST /users/LogIn - Login do usuário
 
 
-####📰 Notícias
+### 📰 Notícias
 
 
 GET /news - Listar todas as notícias
@@ -119,24 +119,24 @@ DELETE /news/:id - Deletar notícia (🔒 Requer autenticação)
 
 
 
-##### 🧪 Testando a API
+## 🧪 Testando a API
 
  **Opção 1: Swagger UI (Recomendado) **
 
 Acesse http://localhost:4200/api-docs e teste diretamente na interface.
 
-###### 📚 Scripts Disponíveis
+## 📚 Scripts Disponíveis
 
-# Desenvolvimento
+### Desenvolvimento
 npm run dev                 # Roda frontend + backend
 npm run dev:frontend        # Só frontend
 npm run dev:backend         # Só backend
 
-# Instalação
+### Instalação
 npm run install:all         # Instala tudo
 npm run install:frontend    # Só frontend
 npm run install:backend     # Só backend
 
-# Build
+### Build
 npm run build:frontend      # Build do frontend
 npm run build              # Build completo
