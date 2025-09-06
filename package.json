@@ -10,15 +10,32 @@
     
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend": "cd backend && npm run dev",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" --names \"API,WEB\" --prefix-colors \"blue,green\"",
     
     "build:frontend": "cd frontend && npm run build",
-    "start": "npm run dev"
+    "build:backend": "cd backend && npm install --production",
+    "build": "npm run build:frontend && npm run build:backend",
+    
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "start": "npm run dev",
+    
+    "clean": "rm -rf frontend/node_modules backend/node_modules frontend/.next backend/uploads/*",
+    "postinstall": "npm run install:all"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
   },
-  "keywords": ["fullstack", "react", "nodejs"],
+  "dependencies": {},
+  "keywords": ["fullstack", "react", "nextjs", "nodejs", "express", "mongodb"],
   "author": "Seu Nome",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielcamisi/technical-test.git"
+  }
 }
