@@ -47,32 +47,6 @@ Sistema fullstack para gerenciamento de notícias com React/Next.js no frontend 
 - **Bcrypt** - Hash de senhas
 - **Dotenv** - Gerenciamento de variáveis de ambiente
 
-## 📁 Estrutura do Projeto
-
-my-technical-test/
-├── frontend/                 # Aplicação Next.js
-│   ├── src/
-│   │   ├── app/             # Páginas (App Router)
-│   │   └── components/      # Componentes reutilizáveis
-│   ├── public/              # Arquivos estáticos
-│   └── package.json
-│
-├── backend/                 # API Node.js
-│   ├── config/              # Configurações
-│   ├── controllers/         # Lógica de negócio
-│   ├── middlewares/         # Middlewares
-│   ├── models/              # Modelos MongoDB
-│   ├── routes/              # Rotas da API
-│   ├── uploads/             # Arquivos enviados
-│   ├── validations/         # Validações
-│   ├── server.js            # Servidor principal
-│   └── package.json
-│
-├── .gitignore               # Arquivos ignorados
-├── package.json             # Scripts do monorepo
-└── README.md                # Documentação
-
-
 ## ⚙️ Configuração e Instalação
 
 ### Pré-requisitos
