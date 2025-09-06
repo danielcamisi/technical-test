@@ -8,6 +8,40 @@ const PORT = process.env.PORT
 require("./config/config");
 const path = require("path");
 
+// SWAGGER - ADICIONE ESSAS LINHAS
+const swaggerUi = require('swagger-ui-express');
+const swaggerJsdoc = require('swagger-jsdoc');
+
+// Configuração do Swagger
+const swaggerOptions = {
+  definition: {
+    openapi: '3.0.0',
+    info: {
+      title: 'Technical Test API',
+      version: '1.0.0',
+      description: 'API para gerenciamento de usuários e notícias',
+    },
+    servers: [
+      {
+        url: `http://localhost:${PORT}`,
+        description: 'Servidor de desenvolvimento',
+      },
+    ],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+        }
+      }
+    }
+  },
+  apis: ['./routes/*.js'],
+};
+
+const specs = swaggerJsdoc(swaggerOptions);
+
 app.use(express.json());
 app.use(cors({
     origin: "*",
@@ -16,6 +50,10 @@ app.use(cors({
 }));
 app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+// SWAGGER ROUTE 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+
 app.use('/', routes);
 
 app.get('/', (req,res)=>{
@@ -24,4 +62,5 @@ app.get('/', (req,res)=>{
 
 app.listen(PORT, ()=> {
     console.log(`Servidor rodando na porta ${PORT}`)
+    console.log(`Documentação Swagger disponível em: http://localhost:${PORT}/api-docs`)
 })

@@ -24,7 +24,6 @@ export default function FormSignIn() {
       confirmPword: formData.get("confirmPword"),
     };
 
-
     if (data.pword !== data.confirmPword) {
       setLoading(false);
       setErrorMessage("As senhas não coincidem. Verifique e tente novamente.");
@@ -85,9 +84,15 @@ export default function FormSignIn() {
           placeholder="Digite seu Nome"
         />
         <FormInput name="email" label="Email" placeholder="Digite seu E-mail" />
-        <FormInput name="pword" label="Senha" placeholder="Digite sua Senha" />
+        <FormInput
+          name="pword"
+          type="password"
+          label="Senha"
+          placeholder="Digite sua Senha"
+        />
         <FormInput
           name="confirmPword"
+          type="password"
           label="Confirmar Senha"
           placeholder="Confirme sua senha"
         />

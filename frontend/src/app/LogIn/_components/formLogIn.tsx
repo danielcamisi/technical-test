@@ -65,7 +65,7 @@ export default function FormLogIn() {
         onSubmit={HandleSubmit}
       >
         <FormInput name="email" label="Email" placeholder="Digite seu E-mail" />
-        <FormInput name="pword" label="Senha" placeholder="Digite sua Senha" />
+        <FormInput name="pword" type="password" label="Senha" placeholder="Digite sua Senha" />
         <Btn type="submit" title={loading ? "Entrando..." : "Entrar"} />
       </form>
 

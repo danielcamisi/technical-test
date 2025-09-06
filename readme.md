@@ -89,6 +89,41 @@ MAX_FILE_SIZE=10485760
 # CORS
 FRONTEND_URL=http://localhost:3000
 
+#### 🛠️ Endpoints da API
+
+####👥 Usuários
+
+
+- POST /users/SignIn - Cadastrar usuário
+
+- POST /users/LogIn - Login do usuário
+
+
+####📰 Notícias
+
+
+GET /news - Listar todas as notícias
+
+GET /news/:id - Obter detalhes de uma notícia
+
+POST /news/create - Criar nova notícia (🔒 Requer autenticação)
+
+PUT /news/:id - Editar notícia (🔒 Requer autenticação)
+
+DELETE /news/:id - Deletar notícia (🔒 Requer autenticação)
+
+
+
+*🔒 Nota: Endpoints marcados requerem token JWT no header Authorization: Bearer <token>*
+
+
+
+#### 🧪 Testando a API
+
+ **Opção 1: Swagger UI (Recomendado) **
+
+Acesse http://localhost:4200/api-docs e teste diretamente na interface.
+
 ### 📚 Scripts Disponíveis
 
 # Desenvolvimento
