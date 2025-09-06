@@ -203,7 +203,8 @@ const AddNews = () => {
               
         
               {file && (
-                <div className="mt-3 flex items-center gap-2 text-xs text-green-600">
+                <div className="mt-3 flex flex-col items-center gap-2 text-xs text-green-600">
+                  <span>IMPORTANTE! Somente os seguintes formatos de arquivos: .PNG .JPG .JPEG</span>
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                   Arquivo pronto para upload
                 </div>
