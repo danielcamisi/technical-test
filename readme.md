@@ -88,6 +88,7 @@ MAX_FILE_SIZE=10485760
 
 # CORS
 FRONTEND_URL=http://localhost:3000
+```
 
 #### 🛠️ Endpoints da API
 
@@ -118,13 +119,13 @@ DELETE /news/:id - Deletar notícia (🔒 Requer autenticação)
 
 
 
-#### 🧪 Testando a API
+##### 🧪 Testando a API
 
  **Opção 1: Swagger UI (Recomendado) **
 
 Acesse http://localhost:4200/api-docs e teste diretamente na interface.
 
-### 📚 Scripts Disponíveis
+###### 📚 Scripts Disponíveis
 
 # Desenvolvimento
 npm run dev                 # Roda frontend + backend
