@@ -49,28 +49,29 @@ Sistema fullstack para gerenciamento de notícias com React/Next.js no frontend 
 
 ## 📁 Estrutura do Projeto
 
-technical-test-fullstack/
+my-technical-test/
 ├── frontend/                 # Aplicação Next.js
 │   ├── src/
-│   │   ├── app/             # App Router (Next.js 14)
-│   │   ├── components/      # Componentes reutilizáveis
-│   │   └── ...
+│   │   ├── app/             # Páginas (App Router)
+│   │   └── components/      # Componentes reutilizáveis
 │   ├── public/              # Arquivos estáticos
-│   ├── package.json
-│   └── ...
+│   └── package.json
+│
 ├── backend/                 # API Node.js
 │   ├── config/              # Configurações
-│   ├── controllers/         # Controladores
+│   ├── controllers/         # Lógica de negócio
 │   ├── middlewares/         # Middlewares
-│   ├── models/              # Modelos do banco
+│   ├── models/              # Modelos MongoDB
 │   ├── routes/              # Rotas da API
 │   ├── uploads/             # Arquivos enviados
 │   ├── validations/         # Validações
-│   ├── package.json
-│   └── server.js
-├── .gitignore
-├── package.json             # Scripts globais
-└── README.md
+│   ├── server.js            # Servidor principal
+│   └── package.json
+│
+├── .gitignore               # Arquivos ignorados
+├── package.json             # Scripts do monorepo
+└── README.md                # Documentação
+
 
 ## ⚙️ Configuração e Instalação
 
