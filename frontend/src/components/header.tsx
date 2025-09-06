@@ -29,28 +29,28 @@ export function Header() {
             className="group relative py-4 z-10 text-black/60 font-bold hover:text-white poppins-semibold px-2"
           >
             Notícias
-            <div className="group-hover:top-1/2 -z-10 transition-all scale-50 group-hover:scale-100 opacity-0 ease group-hover:opacity-100 absolute w-full top-0 left-0 h-7 rounded-md bg-blue-500/80  -translate-y-1/2"></div>
+            <div className="group-hover:top-1/2 -z-10 transition-all scale-50 group-hover:scale-100 opacity-0 ease group-hover:opacity-100 absolute w-full top-0 left-0 h-7 rounded-md bg-gradient-to-r from-blue-500/70 to-purple-600/70  -translate-y-1/2"></div>
           </Link>
           <Link
             href="/about"
             className="group relative py-4 z-10 text-black/60 font-bold hover:text-white poppins-semibold px-2"
           >
             Sobre
-            <div className="group-hover:top-1/2 -z-10 transition-all scale-50 group-hover:scale-100 opacity-0 ease group-hover:opacity-100 absolute w-full top-0 left-0 h-7 rounded-md bg-blue-500/80  -translate-y-1/2"></div>
+            <div className="group-hover:top-1/2 -z-10 transition-all scale-50 group-hover:scale-100 opacity-0 ease group-hover:opacity-100 absolute w-full top-0 left-0 h-7 rounded-md bg-gradient-to-r from-blue-500/70 to-purple-600/70  -translate-y-1/2"></div>
           </Link>
           <Link
             href="/SignIn"
             className="group relative py-4 z-10 text-black/60 font-bold hover:text-white poppins-semibold px-2"
           >
             Cadastrar
-            <div className="group-hover:top-1/2 -z-10 transition-all scale-50 group-hover:scale-100 opacity-0 ease group-hover:opacity-100 absolute w-full top-0 left-0 h-7 rounded-md bg-blue-500/80  -translate-y-1/2"></div>
+            <div className="group-hover:top-1/2 -z-10 transition-all scale-50 group-hover:scale-100 opacity-0 ease group-hover:opacity-100 absolute w-full top-0 left-0 h-7 rounded-md bg-gradient-to-r from-blue-500/70 to-purple-600/70  -translate-y-1/2"></div>
           </Link>
           <Link
             href="/add-news"
             className="group relative py-4 z-10 text-black/60 font-bold hover:text-white poppins-semibold px-2"
           >
             Publicar uma Notícia
-            <div className="group-hover:top-1/2 -z-10 transition-all scale-50 group-hover:scale-100 opacity-0 ease group-hover:opacity-100 absolute w-full top-0 left-0 h-7 rounded-md bg-blue-500/80  -translate-y-1/2"></div>
+            <div className="group-hover:top-1/2 -z-10 transition-all scale-50 group-hover:scale-100 opacity-0 ease group-hover:opacity-100 absolute w-full top-0 left-0 h-7 rounded-md bg-gradient-to-r from-blue-500/70 to-purple-600/70  -translate-y-1/2"></div>
           </Link>
         </nav>
         <div className="flex items-center space-x-4 gap-10">

@@ -24,7 +24,7 @@ const Cards: React.FC<CardsProps> = ({ title, img, alt, desc, _id }) => {
         id="card"
         className="bg-white rounded-xl text-center flex flex-row justify-center items-center gap-3 w-full grow "
       >
-        <div className="h-full flex flex-col justify-center border-r-1 border-r-black">
+        <div className="h-full flex flex-col justify-center border-r-1 border-r-black/20">
           {" "}
           <p className="underline font-bold grow-0">Imagem:</p>
           <Image
@@ -37,7 +37,7 @@ const Cards: React.FC<CardsProps> = ({ title, img, alt, desc, _id }) => {
           />
         </div>
 
-        <div className="h-full flex flex-col justify-center border-r-1 border-r-black">
+        <div className="h-full flex flex-col justify-center border-r-1 border-r-black/20">
           <p className="underline font-bold grow-0">Título da Notícia</p>
           <h1
             id="title"
@@ -47,7 +47,7 @@ const Cards: React.FC<CardsProps> = ({ title, img, alt, desc, _id }) => {
           </h1>
         </div>
 
-        <div className="h-full flex flex-col justify-center border-r-1 border-r-black">
+        <div className="h-full flex flex-col justify-center border-r-1 border-r-black/20">
           <p className="underline font-bold grow-0">Descrição da Notícia</p>
           <p id="desc" className="w-100 grow flex justify-center items-center">
             {desc}

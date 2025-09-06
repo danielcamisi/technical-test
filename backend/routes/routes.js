@@ -5,6 +5,7 @@ const newsController = require("../controllers/newsController");
 const upload = require("../config/multer");
 const validationToken = require("../middlewares/validation")
 
+
 //USER methods
 
 /**

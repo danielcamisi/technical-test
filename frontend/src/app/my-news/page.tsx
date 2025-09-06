@@ -39,24 +39,27 @@ const MyNews: React.FC = () => {
   };
 
   return (
-    <main className="p-15 pt-40 h-screen flex flex-col justify-center items-center gap-10">
-      <div className="grid grid-cols-1 gap-25 ">
-        {news.length > 0 ? (
-          news.map((item) => (
-            <Cards
-              key={item._id}
-              img={item.img}
-              alt={item.title}
-              title={item.title}
-              desc={item.desc}
-              _id={item._id}
-            />
-          ))
-        ) : (
-          <p>Nenhuma notícia encontrada.</p>
-        )}
+    <main className="flex flex-col">
+      <div className="flex-grow flex flex-col items-center justify-center p-4 py-30">
+        <div className="grid grid-cols-1 gap-6 w-full max-w-4xl">
+          {news.length > 0 ? (
+            news.map((item) => (
+              <Cards
+                key={item._id}
+                img={item.img}
+                alt={item.title}
+                title={item.title}
+                desc={item.desc}
+                _id={item._id}
+              />
+            ))
+          ) : (
+            <p>Nenhuma notícia encontrada.</p>
+          )}
+        </div>
+       <BackBtn></BackBtn>
       </div>
-      <BackBtn />
+      
     </main>
   );
 };
